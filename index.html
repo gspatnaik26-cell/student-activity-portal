@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="University Student Activity Management Portal">
+
+    <meta name="author"
+          content="University Student">
+
+    <title>University Activity Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+
+    <!-- Header -->
+    <header>
+
+        <h1>University Activity Portal</h1>
+
+        <p>Discover, Participate and Grow!</p>
+
+        <!-- Navigation -->
+        <nav aria-label="Main navigation">
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <img src="images/campus.jpeg"
+             alt="University campus building">
+
+        <div class="hero-content">
+
+            <h2>Welcome to Our University!</h2>
+
+            <p>
+                Explore exciting events, discover your talents
+                and create unforgettable memories.
+            </p>
+
+            <a href="#events" class="hero-btn">
+                Explore Events
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+
+        <!-- Upcoming Events -->
+        <section id="events" class="content-section">
+
+            <h2>Upcoming Events</h2>
+
+            <div class="card-container">
+
+                <article class="event-card">
+
+                    <img src="images/technical.jpeg"
+                         alt="Students participating in technical activities">
+
+                    <div class="card-content">
+
+                        <h3>Technical Symposium</h3>
+
+                        <p class="event-date">
+                            15 December 2026
+                        </p>
+
+                        <p>
+                            Participate in technical competitions,
+                            coding challenges and workshops.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="event-card">
+
+                    <img src="images/cultural.jpeg"
+                         alt="Students performing at a cultural festival">
+
+                    <div class="card-content">
+
+                        <h3>Annual Cultural Fest</h3>
+
+                        <p class="event-date">
+                            20 December 2026
+                        </p>
+
+                        <p>
+                            Enjoy music, dance, drama and
+                            cultural performances.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="event-card">
+
+                    <img src="images/sports.jpeg"
+                         alt="Students participating in sports">
+
+                    <div class="card-content">
+
+                        <h3>Sports Meet</h3>
+
+                        <p class="event-date">
+                            10 January 2027
+                        </p>
+
+                        <p>
+                            Participate in indoor and outdoor
+                            sports competitions.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- University Activities -->
+        <section id="activities" class="content-section">
+
+            <h2>University Activities</h2>
+
+            <div class="card-container">
+
+                <article class="activity-card">
+
+                    <img src="images/technical.jpeg"
+                         alt="Students learning programming">
+
+                    <div class="card-content">
+
+                        <h3>Technical Club</h3>
+
+                        <p>
+                            Learn programming, robotics and
+                            emerging technologies.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="activity-card">
+
+                    <img src="images/students.jpeg"
+                         alt="University students participating in activities">
+
+                    <div class="card-content">
+
+                        <h3>Cultural Club</h3>
+
+                        <p>
+                            Explore creativity through music,
+                            dance and art.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="activity-card">
+
+                    <img src="images/sports.jpeg"
+                         alt="University sports activities">
+
+                    <div class="card-content">
+
+                        <h3>Sports Club</h3>
+
+                        <p>
+                            Improve fitness and teamwork
+                            through sports activities.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="activity-card">
+
+                    <img src="images/workshop.jpeg"
+                         alt="Students attending a workshop">
+
+                    <div class="card-content">
+
+                        <h3>Workshops</h3>
+
+                        <p>
+                            Develop new skills through
+                            interactive learning sessions.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Announcements -->
+        <aside aria-label="Important announcements">
+
+            <h2>Announcements</h2>
+
+            <p>
+                Event registrations are now open!
+            </p>
+
+            <p>
+                Students are encouraged to participate
+                in university activities.
+            </p>
+
+        </aside>
+
+
+
+        <!-- Registration Form -->
+        <section id="register" class="registration-section">
+
+            <h2>Student Registration Form</h2>
+
+            <p class="form-description">
+                Fill in your details to participate
+                in university activities.
+            </p>
+
+
+            <form action="#" method="post">
+
+                <!-- Personal Information -->
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+
+                    <label for="name">Full Name:</label>
+
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           autocomplete="name"
+                           placeholder="Enter your full name"
+                           required>
+
+
+                    <label for="email">Email Address:</label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           autocomplete="email"
+                           placeholder="Enter your email"
+                           required>
+
+
+                    <label for="phone">Phone Number:</label>
+
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           autocomplete="tel"
+                           placeholder="Enter 10 digit number"
+                           pattern="[0-9]{10}"
+                           required>
+
+
+                    <label for="roll">Roll Number:</label>
+
+                    <input type="text"
+                           id="roll"
+                           name="roll"
+                           autocomplete="off"
+                           placeholder="Enter your roll number"
+                           required>
+
+                </fieldset>
+
+
+
+                <!-- Academic Details -->
+                <fieldset>
+
+                    <legend>Academic Details</legend>
+
+
+                    <label for="department">
+                        Department:
+                    </label>
+
+                    <select id="department"
+                            name="department"
+                            required>
+
+                        <option value="">
+                            Select Department
+                        </option>
+
+                        <option value="cse">
+                            Computer Science
+                        </option>
+
+                        <option value="ece">
+                            Electronics
+                        </option>
+
+                        <option value="eee">
+                            Electrical
+                        </option>
+
+                        <option value="mech">
+                            Mechanical
+                        </option>
+
+                        <option value="civil">
+                            Civil
+                        </option>
+
+                    </select>
+
+
+                    <p class="form-label">
+                        Year of Study:
+                    </p>
+
+
+                    <label class="choice-label">
+                        <input type="radio"
+                               name="year"
+                               value="1"
+                               required>
+                        First Year
+                    </label>
+
+
+                    <label class="choice-label">
+                        <input type="radio"
+                               name="year"
+                               value="2">
+                        Second Year
+                    </label>
+
+
+                    <label class="choice-label">
+                        <input type="radio"
+                               name="year"
+                               value="3">
+                        Third Year
+                    </label>
+
+
+                    <label class="choice-label">
+                        <input type="radio"
+                               name="year"
+                               value="4">
+                        Fourth Year
+                    </label>
+
+                </fieldset>
+
+
+
+                <!-- Activity Preferences -->
+                <fieldset>
+
+                    <legend>Activity Preferences</legend>
+
+
+                    <p class="form-label">
+                        Select your interested activities:
+                    </p>
+
+
+                    <label class="choice-label">
+                        <input type="checkbox"
+                               name="activities"
+                               value="technical">
+                        Technical Events
+                    </label>
+
+
+                    <label class="choice-label">
+                        <input type="checkbox"
+                               name="activities"
+                               value="cultural">
+                        Cultural Events
+                    </label>
+
+
+                    <label class="choice-label">
+                        <input type="checkbox"
+                               name="activities"
+                               value="sports">
+                        Sports Events
+                    </label>
+
+
+                    <label class="choice-label">
+                        <input type="checkbox"
+                               name="activities"
+                               value="workshops">
+                        Workshops
+                    </label>
+
+
+                    <label for="message">
+                        Additional Information:
+                    </label>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              placeholder="Enter your interests..."></textarea>
+
+                </fieldset>
+
+
+
+                <!-- Form Buttons -->
+                <div class="form-buttons">
+
+                    <button type="submit">
+                        Register Now
+                    </button>
+
+                    <button type="reset" class="reset-btn">
+                        Reset Form
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p class="footer-title">
+            University Activity Portal
+        </p>
+
+        <p>
+            Discover, Participate and Grow!
+        </p>
+
+        <p>
+            Contact: activities@university.edu
+        </p>
+
+        <p class="copyright">
+            &copy; 2026 University Activity Portal.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+</html>

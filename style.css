@@ -1,0 +1,500 @@
+
+/* =================================
+   GENERAL STYLING
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7fc;
+    color: #263247;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+header {
+    background: #142d5c;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+header p {
+    color: #dbeafe;
+    margin: 5px 0 15px;
+    font-size: 15px;
+}
+
+
+/* =================================
+   NAVIGATION
+================================= */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 5px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+
+/* =================================
+   SKIP NAVIGATION
+================================= */
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    background: #142d5c;
+    color: white;
+    padding: 12px;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    position: relative;
+    height: 430px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(45%);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+}
+
+.hero-content h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+
+/* =================================
+   MAIN CONTENT
+================================= */
+
+main {
+    width: 90%;
+    max-width: 1150px;
+    margin: 40px auto;
+}
+
+.content-section {
+    margin-bottom: 45px;
+}
+
+.content-section h2,
+.registration-section h2,
+aside h2 {
+    color: #142d5c;
+    font-size: 26px;
+    margin-bottom: 22px;
+    border-left: 5px solid #2563eb;
+    padding-left: 12px;
+}
+
+
+/* =================================
+   EVENT AND ACTIVITY CARDS
+================================= */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.event-card,
+.activity-card {
+    background: white;
+    padding: 0;
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+    border: none;
+}
+
+.event-card:hover,
+.activity-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.event-card img,
+.activity-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: #2563eb;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #475569;
+}
+
+.event-date {
+    color: #142d5c !important;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+/* =================================
+   ANNOUNCEMENTS
+================================= */
+
+aside {
+    background: #e8f0ff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border-left: 5px solid #2563eb;
+}
+
+aside p {
+    margin: 8px 0;
+    color: #34445e;
+}
+
+
+/* =================================
+   REGISTRATION FORM
+================================= */
+
+.registration-section {
+    margin-bottom: 45px;
+}
+
+.form-description {
+    color: #475569;
+    margin-bottom: 20px;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    padding: 22px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+legend {
+    color: #142d5c;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: 500;
+    color: #34445e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    background: #fff;
+    color: #263247;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-label {
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.choice-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #2563eb;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+
+/* =================================
+   BUTTONS
+================================= */
+
+.form-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+    min-height: 44px;
+}
+
+button:hover {
+    background: #142d5c;
+    transform: translateY(-2px);
+}
+
+.reset-btn {
+    background: #64748b;
+}
+
+.reset-btn:hover {
+    background: #475569;
+}
+
+
+/* =================================
+   ACCESSIBILITY AND FOCUS
+================================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #f0a500;
+    outline-offset: 3px;
+}
+
+nav a,
+.hero-btn {
+    display: inline-block;
+    min-height: 44px;
+    padding-top: 9px;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background: #142d5c;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 40px;
+}
+
+.footer-title {
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+}
+
+footer p {
+    margin: 5px;
+    color: #dbeafe;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 850px) {
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .hero {
+        height: 320px;
+    }
+
+    .hero-content h2 {
+        font-size: 25px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+}
+
+
+/* =================================
+   REDUCED MOTION
+================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
